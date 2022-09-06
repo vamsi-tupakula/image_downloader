@@ -9,6 +9,7 @@ app.geometry('500x250')
 def download_image():
     if url_entry.get() == '' or file_entry.get() == '':
         messagebox.showerror('Empty Enties', 'Entry box cannot be empty..')
+        return
     url = url_entry.get()
     png_name = file_entry.get() + '.png'
 
