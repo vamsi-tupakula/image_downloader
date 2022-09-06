@@ -17,5 +17,9 @@ file_label.grid(row=1, column=0, padx=20)
 file_entry = Entry(app, font=('bold', 14), width=30)
 file_entry.grid(row=1, column=1)
 
+# create image button
+create_btn = Button(app, text='Download Image', font=('bold', 12), command=create_image)
+create_btn.grid(row=2,column=0, columnspan=2, pady=15)
+
 app.resizable(False, False)
 app.mainloop()
